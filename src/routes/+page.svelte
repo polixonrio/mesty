@@ -1,6 +1,5 @@
 <script>
   import { Img, Heading, P } from 'flowbite-svelte';
-  import Typewriter from 'svelte-typewriter';
   import { concurrent } from 'svelte-typewriter';
 
 </script>
