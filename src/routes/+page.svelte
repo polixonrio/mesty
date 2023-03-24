@@ -1,6 +1,5 @@
 <script>
   import { Img, Heading, P } from 'flowbite-svelte';
-  import { concurrent } from 'svelte-typewriter';
 </script>
 
 
@@ -9,7 +8,7 @@
 
 
 <P class="px-8 py-4" >
-  <p use:concurrent={{ interval: 30 }} >Testing the typewriter effect</p>
+  <p >Testing the typewriter effect</p>
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
   labore et dolore magna aliqua. Amet cursus sit amet dictum sit. Quis enim lobortis scelerisque
