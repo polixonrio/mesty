@@ -57,6 +57,7 @@
 		<NavUl {hidden} {divClass} {ulClass} class="order-1">
 		  <NavLi href="/" active={true}>Home</NavLi>
 		  <NavLi href="/about">About</NavLi>
+		  <NavLi href="/about">About</NavLi>
 		  <NavLi href="/courses">Courses</NavLi>
 		  <NavLi href="/faqs">FAQs</NavLi>
 		  <NavLi href="/testimonials">Testimonials</NavLi>
