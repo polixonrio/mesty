@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { onMount } from 'svelte';
-	import { DarkMode, Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+	import { DarkMode, Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import {
     Footer,
     FooterBrand,
@@ -32,7 +32,7 @@
 		}
 	});
 	let darkmodebtn =
-		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-lg p-2.5 fixed right-2 top-12  md:top-3 md:right-2 z-50';
+		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-lg p-2.5    md:top-3 md:right-2 z-50';
 	let divClass = 'w-full md:block md:w-auto';
 	let ulClass =
 		'flex flex-col p-4 text-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium';
@@ -41,24 +41,28 @@
 <svelte:window bind:innerWidth={width} />
 
 <header class="sticky top-0 z-50">
-	<Navbar let:hidden let:toggle style="z-index: 50; top: 0;">
-		<DarkMode btnClass={darkmodebtn} />
-
-		<NavBrand href="/" class="">
+	
+	<Navbar let:hidden let:toggle>
+		<NavBrand href="/">
 			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
 				Asterisc.in
 			</span>
 		</NavBrand>
-		<NavHamburger on:click={toggle} />
-		<NavUl {hidden} {divClass} {ulClass}>
-			<NavLi href="/">Home</NavLi>
-			<NavLi href="/about">About</NavLi>
-			<NavLi href="/faqs">FAQ</NavLi>
-			<NavLi href="https://github.com/shinokada/flowbite-sveltekit-responsive-sidebar-layout"
-				>GitHub</NavLi
-			>
+		<div class="flex md:order-2">
+		  <Button size="sm">Get started</Button>
+		  <DarkMode btnClass={darkmodebtn} />
+
+		  <NavHamburger on:click={toggle} />
+		</div>
+		<NavUl {hidden} {divClass} {ulClass} class="order-1">
+		  <NavLi href="/" active={true}>Home</NavLi>
+		  <NavLi href="/about">About</NavLi>
+		  <NavLi href="/courses">Courses</NavLi>
+		  <NavLi href="/faqs">FAQs</NavLi>
+		  <NavLi href="/testimonials">Testimonials</NavLi>
+		  <NavLi href="/contact">Contact</NavLi>
 		</NavUl>
-	</Navbar>
+	  </Navbar>
 </header>
 
 <main>
