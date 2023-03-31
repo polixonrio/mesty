@@ -1,15 +1,24 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { onMount } from 'svelte';
-	import { DarkMode, Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input  } from 'flowbite-svelte';
 	import {
-    Footer,
-    FooterBrand,
-    FooterLinkGroup,
-    FooterLink,
-    FooterCopyright,
-    FooterIcon
-  } from 'flowbite-svelte';
+		DarkMode,
+		Navbar,
+		NavBrand,
+		NavLi,
+		NavUl,
+		NavHamburger,
+		Button,
+		Input
+	} from 'flowbite-svelte';
+	import {
+		Footer,
+		FooterBrand,
+		FooterLinkGroup,
+		FooterLink,
+		FooterCopyright,
+		FooterIcon
+	} from 'flowbite-svelte';
 
 	let breakPoint: number = 1024;
 	let width: number;
@@ -42,8 +51,6 @@
 
 <header class="sticky top-0 z-50">
 	<Navbar let:hidden let:toggle style="z-index: 50; top: 0;">
-		
-
 		<NavBrand href="/" class="">
 			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
 				Asterisc.in
@@ -53,16 +60,14 @@
 			<Button size="sm">Get started</Button>
 			<DarkMode btnClass={darkmodebtn} />
 			<NavHamburger on:click={toggle} />
-		  </div>
+		</div>
 
-		
 		<NavUl {hidden} {divClass} {ulClass}>
 			<NavLi href="/">Home</NavLi>
-			<NavLi href="/about">About</NavLi>
+			<NavLi href="/about">About Us</NavLi>
 			<NavLi href="/faqs">FAQ</NavLi>
-			<NavLi href="https://github.com/shinokada/flowbite-sveltekit-responsive-sidebar-layout"
-				>GitHub</NavLi
-			>
+			<NavLi href="/testimonials">Testimonials</NavLi>
+			<NavLi href="/projects">projects</NavLi>
 		</NavUl>
 	</Navbar>
 </header>
@@ -73,34 +78,32 @@
 
 <Footer footerType="socialmedia">
 	<div class="mx-auto max-w-screen-xl text-center">
-	  <FooterBrand
-		href="https://flowbite.com"
-		src="https://flowbite.com/docs/images/logo.svg"
-		alt="Flowbite Logo"
-		name="Flowbite"
-		aClass="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
-	  />
-	  <p class="my-6 text-gray-500 dark:text-gray-400">
-		Open-source library of over 400+ web components and interactive elements built for better
-		web.
-	  </p>
-	  <FooterLinkGroup
-		ulClass="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
-	  >
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">About</FooterLink>
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Premium</FooterLink>
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Campaigns</FooterLink>
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Blog</FooterLink>
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/"
-		  >Affiliate Program</FooterLink
+		<FooterBrand
+			href="https://flowbite.com"
+			src="https://flowbite.com/docs/images/logo.svg"
+			alt="Flowbite Logo"
+			name="Flowbite"
+			aClass="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+		/>
+		<p class="my-6 text-gray-500 dark:text-gray-400">
+			Open-source library of over 400+ web components and interactive elements built for better web.
+		</p>
+		<FooterLinkGroup
+			ulClass="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
 		>
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
-		<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
-	  </FooterLinkGroup>
-	  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-		>© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All
-		Rights Reserved.</span
-	  >
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">About</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Premium</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Campaigns</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Blog</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/"
+				>Affiliate Program</FooterLink
+			>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
+		</FooterLinkGroup>
+		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+			>© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights
+			Reserved.</span
+		>
 	</div>
-  </Footer>
-  
+</Footer>

@@ -1,12 +1,11 @@
 <script>
   import { Heading, P } from 'flowbite-svelte';
-  import Testimonials from "../components/Testimonials.svelte";
 </script>
 
 
 <Heading class="p-8" tag="h1" customSize="text-3xl">WikiSafari</Heading>
 
-
+<main class="lg:px-40">
 
 <P class="px-8 py-4" >
   <p >Testing the typewriter effect</p>
@@ -59,4 +58,5 @@
   facilisi. Libero justo laoreet sit amet cursus sit amet.
 </P>
 
-<Testimonials />
+</main>
+
