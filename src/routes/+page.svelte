@@ -1,6 +1,6 @@
 <script>
   import { Heading, P } from 'flowbite-svelte';
-  import Testimonials from "../../components/Testimonials.svelte";
+  import Testimonials from "../components/Testimonials.svelte";
 </script>
 
 
