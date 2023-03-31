@@ -5,7 +5,7 @@
   import { ArrowRight, VideoCamera } from 'svelte-heros';
 </script>
 
-<main class="lg:px-40">
+
 <Heading class="p-8" tag="h1" customSize="text-3xl">WikiSafari</Heading>
 
 
@@ -60,6 +60,7 @@
   molestie. Facilisi nullam vehicula ipsum a. Tellus pellentesque eu tincidunt tortor aliquam nulla
   facilisi. Libero justo laoreet sit amet cursus sit amet.
 </P>
+<<<<<<< HEAD
 
 
 <div class="mr-auto place-self-center lg:col-span-7">
@@ -93,3 +94,5 @@
 
 
 </main>
+=======
+>>>>>>> parent of 83a8b89 (margins)
