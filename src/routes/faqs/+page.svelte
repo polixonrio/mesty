@@ -1,5 +1,16 @@
 <script>
 	import FaQs from "../../components/FAQs.svelte";
-
+	import Fq from "../../components/Fq.svelte";
 </script>
-<FaQs />
+
+
+<main class="">
+	<Fq />
+</main>
+
+
+
+<!-- <FaQs /> -->
+
+
+

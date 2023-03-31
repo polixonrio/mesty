@@ -67,7 +67,7 @@
 			<NavLi href="/about">About Us</NavLi>
 			<NavLi href="/faqs">FAQ</NavLi>
 			<NavLi href="/testimonials">Testimonials</NavLi>
-			<NavLi href="/projects">projects</NavLi>
+			<NavLi href="/projects">Projects</NavLi>
 		</NavUl>
 	</Navbar>
 </header>
