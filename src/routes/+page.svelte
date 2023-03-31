@@ -1,6 +1,6 @@
 <script>
   import { Heading, P } from 'flowbite-svelte';
-
+  import Testimonials from "../../components/Testimonials.svelte";
 </script>
 
 
@@ -58,3 +58,5 @@
   molestie. Facilisi nullam vehicula ipsum a. Tellus pellentesque eu tincidunt tortor aliquam nulla
   facilisi. Libero justo laoreet sit amet cursus sit amet.
 </P>
+
+<Testimonials />
