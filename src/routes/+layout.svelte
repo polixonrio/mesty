@@ -20,6 +20,12 @@
 		FooterIcon
 	} from 'flowbite-svelte';
 
+	let active = 0;
+
+	function setActive(index: number) {
+		active = index;
+	}
+
 	let breakPoint: number = 1024;
 	let width: number;
 	let activateClickOutside = true;
@@ -49,8 +55,8 @@
 
 <svelte:window bind:innerWidth={width} />
 
-<header class="sticky top-0 z-50">
-	<Navbar let:hidden let:toggle style="z-index: 50; top: 0;">
+<header class="sticky shadow-xl dark:shadow-indigo-500/50 top-0 z-50 ">
+	<Navbar let:hidden let:toggle class="">
 		<NavBrand href="/" class="">
 			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
 				Asterisc.in
@@ -63,11 +69,13 @@
 		</div>
 
 		<NavUl {hidden} {divClass} {ulClass}>
-			<NavLi href="/">Home</NavLi>
-			<NavLi href="/about">About Us</NavLi>
-			<NavLi href="/faqs">FAQ</NavLi>
-			<NavLi href="/testimonials">Testimonials</NavLi>
-			<NavLi href="/projects">Projects</NavLi>
+			<NavLi href="/" active={active === 0} on:click={() => setActive(0)}>Home</NavLi>
+			<NavLi href="/aboutus" active={active === 1} on:click={() => setActive(1)}>About Us</NavLi>
+			<NavLi href="/faqs" active={active === 2} on:click={() => setActive(2)}>FAQ</NavLi>
+			<NavLi href="/testimonials" active={active === 3} on:click={() => setActive(3)}
+				>Testimonials</NavLi
+			>
+			<NavLi href="/projects" active={active === 4} on:click={() => setActive(4)}>Projects</NavLi>
 		</NavUl>
 	</Navbar>
 </header>
@@ -91,19 +99,17 @@
 		<FooterLinkGroup
 			ulClass="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
 		>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">About</FooterLink>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Premium</FooterLink>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Campaigns</FooterLink>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Blog</FooterLink>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/"
-				>Affiliate Program</FooterLink
-			>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">About Us</FooterLink>
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Testimonials</FooterLink
+			>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Projects</FooterLink>
+
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact Us</FooterLink>
 		</FooterLinkGroup>
 		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-			>© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights
-			Reserved.</span
+			>© 2021-2023 <a href="https://asterisc.in/" class="hover:underline">Asterisc.in™ </a>.
+			Developed by Asterisc Technocrat Pvt. Ltd. All Rights Reserved.</span
 		>
 	</div>
 </Footer>

@@ -28,6 +28,7 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"flowbite": "^1.6.4",
 		"flowbite-svelte": "^0.30.7",
+		"flowbite-svelte-blocks": "github:shinokada/flowbite-svelte-blocks",
 		"postcss": "^8.4.14",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.8.0",
@@ -45,7 +46,6 @@
 	"type": "module",
 	"dependencies": {
 		"@formkit/auto-animate": "^1.0.0-beta.6",
-		"flowbite-svelte-blocks": "^0.3.6",
 		"svelte-heros": "^2.9.2",
 		"svelte-typewriter": "^3.1.4"
 	}

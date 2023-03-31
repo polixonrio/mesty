@@ -3,10 +3,10 @@
 </script>
 
 
-<Heading class="p-8" tag="h1" customSize="text-3xl">WikiSafari</Heading>
+
 
 <main class="lg:px-40">
-
+  <Heading class="p-8" tag="h1" customSize="text-3xl">Asterisc</Heading>
 <P class="px-8 py-4" >
   <p >Testing the typewriter effect</p>
 
