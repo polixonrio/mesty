@@ -10,7 +10,7 @@
 				<div class="md:order-2">
 					<figure class="">
 						<img
-							src="src/images/aster.webp"
+							src="/images/aster.webp"
 							class="h-auto mx-auto rounded w-96 mt-5 md:w-102 lg:w-148"
 							alt="mission"
 						/>
@@ -37,7 +37,7 @@
 				<div class="md:order-2">
 					<figure class="">
 						<img
-							src="src/images/mission.webp"
+							src="/images/mission.webp"
 							class="h-auto mx-auto rounded w-96 mt-5 md:w-102 lg:w-148"
 							alt="mission"
 						/>
@@ -62,7 +62,7 @@
 				<div class="md:order-1">
 					<figure class="">
 						<img
-							src="src/images/vision.webp"
+							src="/images/vision.webp"
 							class="h-auto mx-auto rounded w-96 mt-5 md:w-102 lg:w-148"
 							alt="inspiration"
 						/>
@@ -89,7 +89,7 @@
 				<div class="md:order-2">
 					<figure class="">
 						<img
-							src="src/images/inspiration.webp"
+							src="/images/inspiration.webp"
 							class="h-auto mx-auto rounded w-96 mt-5 md:w-102 lg:w-148"
 							alt="inspiration"
 						/>
