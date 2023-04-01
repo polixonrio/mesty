@@ -58,13 +58,18 @@
 <header class="sticky shadow-xl dark:shadow-indigo-500/50 top-0 z-50 ">
 	<Navbar let:hidden let:toggle class="">
 		<NavBrand href="/" class="">
-			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
+			<img
+				src="/images/logos.webp"
+				class="h-auto mx-auto rounded w-9 md:w-9 lg:w-9"
+				alt="mission"
+			/>
+			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white ">
 				Asterisc.in
 			</span>
 		</NavBrand>
 		<div class="flex md:order-2">
 			<Button size="sm">Get started</Button>
-			<DarkMode btnClass={darkmodebtn} />
+			<DarkMode class="ml-2" btnClass={darkmodebtn} />
 			<NavHamburger on:click={toggle} />
 		</div>
 
@@ -87,12 +92,13 @@
 <Footer footerType="socialmedia">
 	<div class="mx-auto max-w-screen-xl text-center">
 		<FooterBrand
-			href="https://flowbite.com"
-			src="https://flowbite.com/docs/images/logo.svg"
-			alt="Flowbite Logo"
-			name="Flowbite"
+			href="https://asterisc.in"
+			src="/images/logos.webp"
+			alt="Asterisc Logo"
+			name="Asterisc.in"
 			aClass="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
 		/>
+		
 		<p class="my-6 text-gray-500 dark:text-gray-400">
 			Open-source library of over 400+ web components and interactive elements built for better web.
 		</p>
