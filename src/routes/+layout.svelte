@@ -60,7 +60,7 @@
 		<NavBrand href="/" class="">
 			<img
 				src="/images/logos.webp"
-				class="h-auto mx-auto rounded w-9 md:w-9 lg:w-9"
+				class="h-auto mx-auto  w-9 md:w-9 lg:w-9"
 				alt="mission"
 			/>
 			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white ">
@@ -68,7 +68,7 @@
 			</span>
 		</NavBrand>
 		<div class="flex md:order-2">
-			<a href="#getstarted"><Button size="sm" >Get started</Button></a>
+			<a href="#getstarted" class="mt-1" ><Button size="sm" >Get started</Button></a>
 			
 			<DarkMode class="ml-2" btnClass={darkmodebtn} />
 			<NavHamburger on:click={toggle} />
