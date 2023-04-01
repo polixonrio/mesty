@@ -9,11 +9,7 @@
 			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 				<div class="md:order-2">
 					<figure class="">
-						<img
-							src="/images/prog.webp"
-							class="h-auto mx-auto rounded w-96  md:w-102 lg:w-148"
-							alt="mission"
-						/>
+						
 						<figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400" />
 					</figure>
 				</div>
