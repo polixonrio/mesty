@@ -43,7 +43,7 @@
 					</figure>
 				</div>
 				<div class="md:order-1 ">
-					<Heading class="text-center md:text-left">OUR MISSION</Heading>
+					<Heading class="text-center md:text-left">THE ASTERISC MISSION</Heading>
 
 					<P
 						class="text-lg font-normal  text-center md:text-left text-gray-900 dark:text-gray-200 py-4"
@@ -70,7 +70,7 @@
 
 
 
-	<section class=" bg-blue-600 dark:bg-blue-600 ">
+	<section id="getstarted" class="  bg-purple-500 dark:bg-purple-500 ">
 		<div class="container flex flex-col items-center justify-center p-4 mx-auto md:p-8">
 			<Hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
     

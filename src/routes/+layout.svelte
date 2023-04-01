@@ -68,7 +68,8 @@
 			</span>
 		</NavBrand>
 		<div class="flex md:order-2">
-			<Button size="sm">Get started</Button>
+			<a href="#getstarted"><Button size="sm" >Get started</Button></a>
+			
 			<DarkMode class="ml-2" btnClass={darkmodebtn} />
 			<NavHamburger on:click={toggle} />
 		</div>
