@@ -15,8 +15,8 @@
 	</section>
     <section class="sm:py-20">
 		<div class="container flex flex-wrap justify-center p-4 mx-auto md:p-8">
-            <div class="w-full lg:w-1/2 p-4">Column3</div>
-            <div class="w-full lg:w-1/2 p-4">Column4</div>
+            <div class="w-full md:w-1/2 p-4">Column3</div>
+            <div class="w-full md:w-1/2 p-4">Column4</div>
 		
             
     
