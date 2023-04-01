@@ -100,7 +100,7 @@
 		/>
 		
 		<p class="my-6 text-gray-500 dark:text-gray-400">
-			Open-source library of over 400+ web components and interactive elements built for better web.
+			Join us now for your better tomorrow.
 		</p>
 		<FooterLinkGroup
 			ulClass="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
